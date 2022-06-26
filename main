@@ -25,13 +25,6 @@ end))
 end
 end
 
-function notify(t,tex,dur)
-game.StarterGui:SetCore("SendNotification", {
-    Title = t; 
-    Text = tex; 
-    Duration = dur or 5;
-})
-end
 
 local srv= game:GetService("RunService")
 
@@ -56,10 +49,8 @@ char.Humanoid.AutoRotate=false
 char.Humanoid.WalkSpeed=0
 char.Humanoid.JumpPower=0
 char.Torso.Anchored = true
-notify('Nexo','Reanimating...\nPlease wait '..penis..' seconds.')
-wait(penis)
+wait(6)
 char.Torso.Anchored=false
-notify('Nexo','Reanimated..')
 char.Humanoid.Health=0
 --reanim.Humanoid.AutoRotate=false
 reanim.Animate.Disabled = true
